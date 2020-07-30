@@ -1,11 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../css/Display.css';
 
 const Display = props => {
   const { result } = props;
   return (
     <div>
-      <input type="text" name="result" id="resultOPeration" value={result} />
+      <input
+        type="text"
+        name="result"
+        id="resultOPeration"
+        className="input-display"
+        value={result}
+      />
     </div>
   );
 };
