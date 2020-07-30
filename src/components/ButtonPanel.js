@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ButtonPanel = props => {
+  // eslint-disable-next-line no-unused-vars
   const { buttonName } = props;
   return (
     <div>
