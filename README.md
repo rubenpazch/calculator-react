@@ -1,3 +1,31 @@
+# Calculator with React
+
+This is a solo project as part of the Microverse curriculum, it is a simple react application where I built a real-world project for a fictional company that is about building a calculator and has different milestones and some technical requirements to follow. 
+
+```  
+Math-magicians is a fictional company based in France. They have requested your help to build a simple product that would assist them with their calculations. An important thing to notice is that they have asked for a product that is not just fully-functional, but also beautiful and user-friendly.
+```
+
+## Preview of the requirement
+
+![Screenshot](calculator.png)
+
+
+## Technical requirements 
+
+* Node.js
+* React
+* React-DOM
+* React-Create-App
+* npm
+* CSS
+* ES6
+* Prop-types
+* Big.js
+* Heroku
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
