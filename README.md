@@ -24,6 +24,10 @@ Math-magicians is a fictional company based in France. They have requested your 
 * Big.js
 * Heroku
 
+## Go to live demo
+
+
+[Create React App](https://lit-springs-48364.herokuapp.com/).
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
