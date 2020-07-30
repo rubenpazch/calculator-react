@@ -20,8 +20,9 @@ Math-magicians is a fictional company based in France. They have requested your 
 * npm
 * CSS
 * ES6
-
-
+* Prop-types
+* Big.js
+* Heroku
 
 
 
