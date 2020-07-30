@@ -56,7 +56,7 @@ const ButtonPanel = props => {
           className="button orange"
           type="button"
         >
-          X
+          x
         </button>
       </div>
       <div className="row-elements">
