@@ -18,3 +18,9 @@
 .w-50 {
   width: 50%;
 }
+
+.row-elements {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}

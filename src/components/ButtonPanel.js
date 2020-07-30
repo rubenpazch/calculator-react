@@ -4,10 +4,10 @@ import '../css/ButtonPanel.css';
 
 const ButtonPanel = props => {
   // eslint-disable-next-line no-unused-vars
-  const { buttonName } = props;
+  const { buttonName, color, wide } = props;
   return (
     <div>
-      <div>
+      <div className="row-elements">
         <button
           className="button gray"
           type="button"
@@ -33,7 +33,7 @@ const ButtonPanel = props => {
           ÷
         </button>
       </div>
-      <div>
+      <div className="row-elements">
         <button
           className="button gray"
           type="button"
@@ -59,7 +59,7 @@ const ButtonPanel = props => {
           X
         </button>
       </div>
-      <div>
+      <div className="row-elements">
         <button
           className="button gray"
           type="button"
@@ -85,7 +85,7 @@ const ButtonPanel = props => {
           -
         </button>
       </div>
-      <div>
+      <div className="row-elements">
         <button
           className="button gray"
           type="button"
@@ -111,7 +111,7 @@ const ButtonPanel = props => {
           +
         </button>
       </div>
-      <div>
+      <div className="row-elements">
         <button
           className="button gray w-50"
           type="button"
@@ -137,10 +137,14 @@ const ButtonPanel = props => {
 
 ButtonPanel.propTypes = {
   buttonName: PropTypes.string,
+  color: PropTypes.string,
+  wide: PropTypes.string,
 };
 
 ButtonPanel.defaultProps = {
   buttonName: '0',
+  color: '#f5913e',
+  wide: 'false',
 };
 
 export default ButtonPanel;

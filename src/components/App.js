@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="calculatorWrapper">
         <Display item="aviones" />
-        <ButtonPanel />
+        <ButtonPanel color="#f5913e" wide="true" />
       </div>
     </div>
   );
