@@ -9,12 +9,12 @@ notice is that they have asked for a product that is not just fully-functional,
 but also beautiful and user-friendly.
 ```
 
-## Preview of the requirement framed_picture:
+## Preview of the requirement :framed_picture:
 
 ![Screenshot](calculator.png)
 
 
-## Technical requirements 
+## Technical requirements  :joystick:
 
 * Node.js
 * React
@@ -27,7 +27,7 @@ but also beautiful and user-friendly.
 * Big.js
 * Heroku
 
-## Go to live demo
+## Go to live demo :rocket:
 
 
 [Create React App](https://lit-springs-48364.herokuapp.com/).
@@ -37,7 +37,7 @@ but also beautiful and user-friendly.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -66,7 +66,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-## Authors
+## Authors :moyai:
 
 
 👤 **Ruben Paz Chuspe**
