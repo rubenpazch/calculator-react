@@ -5,7 +5,7 @@ const Display = props => {
   const { result } = props;
   return (
     <div>
-      <input type="text" name="result" id="resultOPeration" value={result} />
+      <p>{result}</p>
     </div>
   );
 };

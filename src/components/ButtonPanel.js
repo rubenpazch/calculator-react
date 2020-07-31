@@ -1,88 +1,38 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Button from './Button';
 
-const ButtonPanel = props => {
-  // eslint-disable-next-line no-unused-vars
-  const { buttonName } = props;
-  return (
+const ButtonPanel = () => (
+  <div>
     <div>
-      <div>
-        <button type="button">
-          AC
-        </button>
-        <button type="button">
-          +/-
-        </button>
-        <button type="button">
-          %
-        </button>
-        <button type="button">
-          ÷
-        </button>
-      </div>
-      <div>
-        <button type="button">
-          7
-        </button>
-        <button type="button">
-          8
-        </button>
-        <button type="button">
-          9
-        </button>
-        <button type="button">
-          X
-        </button>
-      </div>
-      <div>
-        <button type="button">
-          4
-        </button>
-        <button type="button">
-          5
-        </button>
-        <button type="button">
-          6
-        </button>
-        <button type="button">
-          -
-        </button>
-      </div>
-      <div>
-        <button type="button">
-          1
-        </button>
-        <button type="button">
-          2
-        </button>
-        <button type="button">
-          3
-        </button>
-        <button type="button">
-          +
-        </button>
-      </div>
-      <div>
-        <button type="button">
-          0
-        </button>
-        <button type="button">
-          .
-        </button>
-        <button type="button">
-          =
-        </button>
-      </div>
+      <Button buttonName="AC" />
+      <Button buttonName="+/-" />
+      <Button buttonName="%" />
+      <Button buttonName="÷" />
     </div>
-  );
-};
-
-ButtonPanel.propTypes = {
-  buttonName: PropTypes.string,
-};
-
-ButtonPanel.defaultProps = {
-  buttonName: '0',
-};
+    <div>
+      <Button buttonName="7" />
+      <Button buttonName="8" />
+      <Button buttonName="9" />
+      <Button buttonName="x" />
+    </div>
+    <div>
+      <Button buttonName="4" />
+      <Button buttonName="5" />
+      <Button buttonName="6" />
+      <Button buttonName="-" />
+    </div>
+    <div>
+      <Button buttonName="1" />
+      <Button buttonName="2" />
+      <Button buttonName="3" />
+      <Button buttonName="+" />
+    </div>
+    <div>
+      <Button buttonName="0" />
+      <Button buttonName="." />
+      <Button buttonName="=" />
+    </div>
+  </div>
+);
 
 export default ButtonPanel;
