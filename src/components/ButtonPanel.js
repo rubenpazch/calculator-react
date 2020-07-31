@@ -1,135 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../css/ButtonPanel.css';
+import Button from './Button';
 
 const ButtonPanel = props => {
   // eslint-disable-next-line no-unused-vars
   const { buttonName, color, wide } = props;
   return (
     <div>
+
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          AC
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          +/-
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          %
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          ÷
-        </button>
+        <Button buttonName="AC" />
+        <Button buttonName="+/-" />
+        <Button buttonName="%" />
+        <Button buttonName="÷" color="#f5913e" />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          7
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          8
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          9
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          X
-        </button>
+        <Button buttonName="7" />
+        <Button buttonName="8" />
+        <Button buttonName="9" />
+        <Button buttonName="x" color="#f5913e" />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          4
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          5
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          6
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          -
-        </button>
+        <Button buttonName="4" />
+        <Button buttonName="5" />
+        <Button buttonName="6" />
+        <Button buttonName="-" color="#f5913e" />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          1
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          2
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          3
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          +
-        </button>
+        <Button buttonName="1" />
+        <Button buttonName="2" />
+        <Button buttonName="3" />
+        <Button buttonName="+" color="#f5913e" />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray w-50"
-          type="button"
-        >
-          0
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          .
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          =
-        </button>
+        <Button buttonName="0" wide />
+        <Button buttonName="." />
+        <Button buttonName="=" color="#f5913e" />
       </div>
     </div>
   );

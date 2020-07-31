@@ -5,14 +5,8 @@ import '../css/Display.css';
 const Display = props => {
   const { result } = props;
   return (
-    <div>
-      <input
-        type="text"
-        name="result"
-        id="resultOPeration"
-        className="input-display"
-        value={result}
-      />
+    <div className="input-display">
+      <p>{result}</p>
     </div>
   );
 };
