@@ -1,150 +1,126 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../css/ButtonPanel.css';
+import Button from './Button';
 
 const ButtonPanel = props => {
-  // eslint-disable-next-line no-unused-vars
-  const { buttonName, color, wide } = props;
+  const { clickhandler } = props;
+  const handleClick = buttonName => { clickhandler(buttonName); };
+
   return (
     <div>
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          AC
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          +/-
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          %
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          ÷
-        </button>
+        <Button
+          buttonName="AC"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="+/-"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="%"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="÷"
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          7
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          8
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          9
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          x
-        </button>
+        <Button
+          buttonName="7"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="8"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="9"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="x"
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          4
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          5
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          6
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          -
-        </button>
+        <Button
+          buttonName="4"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="5"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="6"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="-"
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          1
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          2
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          3
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          +
-        </button>
+        <Button
+          buttonName="1"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="2"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="3"
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="+"
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray w-50"
-          type="button"
-        >
-          0
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          .
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          =
-        </button>
+        <Button
+          buttonName="0"
+          color="Button"
+          clickHandler={handleClick}
+          wide
+        />
+        <Button
+          buttonName="."
+          color="Button"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="="
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
     </div>
   );
 };
 
 ButtonPanel.propTypes = {
-  buttonName: PropTypes.string,
-  color: PropTypes.string,
-  wide: PropTypes.string,
-};
-
-ButtonPanel.defaultProps = {
-  buttonName: '0',
-  color: '#f5913e',
-  wide: 'false',
+  clickhandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
