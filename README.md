@@ -1,12 +1,15 @@
-# Calculator with React
+# Calculator with React  :paperclip:
 
 This is a solo project as part of the Microverse curriculum, it is a simple react application where I built a real-world project for a fictional company that is about building a calculator and has different milestones and some technical requirements to follow. 
 
 ```  
-Math-magicians is a fictional company based in France. They have requested your help to build a simple product that would assist them with their calculations. An important thing to notice is that they have asked for a product that is not just fully-functional, but also beautiful and user-friendly.
+Math-magicians is a fictional company based in France. They have requested your help to 
+build a simple product that would assist them with their calculations. An important thing to 
+notice is that they have asked for a product that is not just fully-functional, 
+but also beautiful and user-friendly.
 ```
 
-## Preview of the requirement
+## Preview of the requirement framed_picture:
 
 ![Screenshot](calculator.png)
 
