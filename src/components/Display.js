@@ -6,7 +6,7 @@ const Display = props => {
   const { result } = props;
   return (
     <div className="input-display">
-      { result }
+      <p>{ result }</p>
     </div>
   );
 };
