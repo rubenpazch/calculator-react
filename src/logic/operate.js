@@ -3,7 +3,7 @@ const Big = require('big.js');
 const Operate = (numberOne, numberTwo, operation) => {
   const nOne = new Big(numberOne);
   const nTwo = new Big(numberTwo);
-  
+
   switch (operation) {
     case '-':
       return nOne.minus(nTwo);
