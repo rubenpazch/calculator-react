@@ -30,7 +30,7 @@ but also beautiful and user-friendly.
 ## Go to live demo :rocket:
 
 
-[Create React App](https://lit-springs-48364.herokuapp.com/).
+[Go to live version](https://lit-springs-48364.herokuapp.com/).
 
 
 ## Getting Started  :robot:
