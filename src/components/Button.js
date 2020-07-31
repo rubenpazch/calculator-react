@@ -7,13 +7,17 @@ const Button = props => {
   } = props;
 
   const widthValue = wide ? '50%' : '25%';
-  const handleClick = name => { clickHandler(name); };
 
+  const styleButton = {
+    backgroundColor: color,
+    width: widthValue,
+  };
+  const handleClick = name => { clickHandler(name); };
   return (
     <button
       type="button"
       className="button"
-      style={{ backgroundColor: color, width: widthValue }}
+      style={styleButton}
       onClick={() => { handleClick({ buttonName }); }}
     >
       {buttonName}

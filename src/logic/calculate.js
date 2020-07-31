@@ -112,7 +112,7 @@ const Calculate = (data, buttonName) => {
   }
 
   if (isEqual(buttonName)) {
-    total = operate(next, total, operation);
+    total = String(operate(next, total, operation));
     operation = '';
     next = '0';
   }

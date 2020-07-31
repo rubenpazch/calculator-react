@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import '../css/Display.css';
 
 const Display = props => {
-  const { result } = props;
+  let { result } = props;
+  if (result === null || result === 'null') { result = '0'; }
   return (
     <div className="input-display">
       <p>{ result }</p>

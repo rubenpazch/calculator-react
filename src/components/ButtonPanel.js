@@ -12,17 +12,14 @@ const ButtonPanel = props => {
       <div className="row-elements">
         <Button
           buttonName="AC"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
           buttonName="+/-"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
           buttonName="%"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
@@ -34,17 +31,14 @@ const ButtonPanel = props => {
       <div className="row-elements">
         <Button
           buttonName="7"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
           buttonName="8"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
           buttonName="9"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
@@ -56,17 +50,14 @@ const ButtonPanel = props => {
       <div className="row-elements">
         <Button
           buttonName="4"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
           buttonName="5"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
           buttonName="6"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
@@ -78,17 +69,14 @@ const ButtonPanel = props => {
       <div className="row-elements">
         <Button
           buttonName="1"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
           buttonName="2"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
           buttonName="3"
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
@@ -100,13 +88,11 @@ const ButtonPanel = props => {
       <div className="row-elements">
         <Button
           buttonName="0"
-          color="Button"
           clickHandler={handleClick}
           wide
         />
         <Button
           buttonName="."
-          color="Button"
           clickHandler={handleClick}
         />
         <Button
