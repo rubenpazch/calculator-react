@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../css/Display.css';
 
 const Display = props => {
   const { result } = props;
   return (
-    <div>
+    <div className="input-display">
       <p>{result}</p>
     </div>
   );

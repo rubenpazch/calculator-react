@@ -1,0 +1,26 @@
+.button {
+  min-width: 25%;
+  min-height: 100px;
+  text-align: center;
+  color: #000;
+  border: 1px solid rgb(168, 164, 164);
+  font-size: 2em;
+}
+
+.orange {
+  background-color: #f5913e;
+}
+
+.gray {
+  background-color: #e0e0e0;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.row-elements {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+}

@@ -1,13 +1,15 @@
 import React from 'react';
-import './App.css';
+import '../css/App.css';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
 function App() {
   return (
     <div className="App">
-      <Display item="aviones" />
-      <ButtonPanel />
+      <div className="calculatorWrapper">
+        <Display item="aviones" />
+        <ButtonPanel color="#f5913e" wide="true" />
+      </div>
     </div>
   );
 }

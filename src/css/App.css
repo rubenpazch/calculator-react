@@ -1,0 +1,18 @@
+.App {
+  width: 100vw;
+  min-height: 80vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculatorWrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 70vh;
+  max-width: 700px;
+}
