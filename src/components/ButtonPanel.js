@@ -16,10 +16,30 @@ const ButtonPanel = props => {
         <Button buttonName="÷" color="#f5913e" />
       </div>
       <div className="row-elements">
-        <Button buttonName="7" />
-        <Button buttonName="8" />
-        <Button buttonName="9" />
-        <Button buttonName="x" color="#f5913e" />
+        <button
+          className="button gray"
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="button gray"
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="button gray"
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="button orange"
+          type="button"
+        >
+          x
+        </button>
       </div>
       <div className="row-elements">
         <Button buttonName="4" />
