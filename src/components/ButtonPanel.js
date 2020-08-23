@@ -4,74 +4,110 @@ import '../css/ButtonPanel.css';
 import Button from './Button';
 
 const ButtonPanel = props => {
-  // eslint-disable-next-line no-unused-vars
-  const { buttonName, color, wide } = props;
+  const { clickhandler } = props;
+  const handleClick = buttonName => { clickhandler(buttonName); };
+
   return (
     <div>
 
       <div className="row-elements">
-        <Button buttonName="AC" />
-        <Button buttonName="+/-" />
-        <Button buttonName="%" />
-        <Button buttonName="÷" color="#f5913e" />
+        <Button
+          buttonName="AC"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="+/-"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="%"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="÷"
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
       <div className="row-elements">
-        <button
-          className="button gray"
-          type="button"
-        >
-          7
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          8
-        </button>
-        <button
-          className="button gray"
-          type="button"
-        >
-          9
-        </button>
-        <button
-          className="button orange"
-          type="button"
-        >
-          x
-        </button>
+        <Button
+          buttonName="7"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="8"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="9"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="x"
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
       <div className="row-elements">
-        <Button buttonName="4" />
-        <Button buttonName="5" />
-        <Button buttonName="6" />
-        <Button buttonName="-" color="#f5913e" />
+        <Button
+          buttonName="4"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="5"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="6"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="-"
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
       <div className="row-elements">
-        <Button buttonName="1" />
-        <Button buttonName="2" />
-        <Button buttonName="3" />
-        <Button buttonName="+" color="#f5913e" />
+        <Button
+          buttonName="1"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="2"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="3"
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="+"
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
       <div className="row-elements">
-        <Button buttonName="0" wide />
-        <Button buttonName="." />
-        <Button buttonName="=" color="#f5913e" />
+        <Button
+          buttonName="0"
+          clickHandler={handleClick}
+          wide
+        />
+        <Button
+          buttonName="."
+          clickHandler={handleClick}
+        />
+        <Button
+          buttonName="="
+          color="#f5913e"
+          clickHandler={handleClick}
+        />
       </div>
     </div>
   );
 };
 
 ButtonPanel.propTypes = {
-  buttonName: PropTypes.string,
-  color: PropTypes.string,
-  wide: PropTypes.string,
-};
-
-ButtonPanel.defaultProps = {
-  buttonName: '0',
-  color: '#f5913e',
-  wide: 'false',
+  clickhandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;

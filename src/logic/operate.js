@@ -12,9 +12,13 @@ const Operate = (numberOne, numberTwo, operation) => {
     case 'x':
       return nOne.times(nTwo);
     case '÷':
+      if (numberTwo === '0') {
+        return 'Division by zero is undefined';
+      }
+
       return nOne.div(nTwo);
     case '%':
-      return nOne.minus(nTwo);
+      return nOne.div(100);
     default:
       break;
   }
